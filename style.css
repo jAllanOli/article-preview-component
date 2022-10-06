@@ -1,0 +1,129 @@
+:root {
+--very-dark-grayish-blue: hsl(217, 19%, 35%);
+--desaturated-dark-blue: hsl(214, 17%, 51%);
+--grayish-blue: hsl(212, 23%, 69%);
+--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-bg {
+    background-image: url(./images/drawers.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 210px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main-content {
+    padding: 3rem 2.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.main-content > p {
+    color: var(--desaturated-dark-blue);
+    line-height: 1.5rem;
+}
+
+.att {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.att img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.name {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+}
+
+.date {
+    color: var(--grayish-blue);
+}
+
+#share-btn {
+    border-radius: 50%;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.baloon {
+    width: 100%;
+    padding: 1.7rem 2.5rem;
+    background-color: var(--very-dark-grayish-blue);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.socials {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials p {
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    color: var(--grayish-blue);
+}
+
+.visible {
+    display: flex;
+}
+
+.selected-state {
+    background-color: var(--desaturated-dark-blue);
+}
