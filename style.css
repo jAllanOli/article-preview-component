@@ -1,8 +1,8 @@
 :root {
---very-dark-grayish-blue: hsl(217, 19%, 35%);
---desaturated-dark-blue: hsl(214, 17%, 51%);
---grayish-blue: hsl(212, 23%, 69%);
---light-grayish-blue: hsl(210, 46%, 95%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 * {
@@ -52,7 +52,7 @@ h1 {
     color: var(--very-dark-grayish-blue);
 }
 
-.main-content > p {
+.main-content>p {
     color: var(--desaturated-dark-blue);
     line-height: 1.5rem;
 }
@@ -126,4 +126,41 @@ h1 {
 
 .selected-state {
     background-color: var(--desaturated-dark-blue);
+}
+
+@media (min-width: 1000px) {
+    main {
+        width: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .img-bg {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        height: 254px;
+    }
+
+    .baloon {
+        border-radius: 10px;
+        padding: 1rem 0;
+        width: 35%;
+        left: 74%;
+        bottom: 70px;
+        display: none;
+        justify-content: center;
+    }
+
+    .baloon::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 50%;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;    
+        border-top: 15px solid var(--very-dark-grayish-blue);
+    }
+
 }
