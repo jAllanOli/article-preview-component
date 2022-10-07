@@ -92,6 +92,7 @@ h1 {
     height: 2.5rem;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 .baloon {
@@ -105,6 +106,7 @@ h1 {
     border-bottom-right-radius: 10px;
     position: absolute;
     bottom: 0;
+    opacity: 0;
 }
 
 .socials {
@@ -118,10 +120,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: .4rem;
     color: var(--grayish-blue);
-}
-
-.visible {
-    display: flex;
 }
 
 .selected-state {
@@ -162,5 +160,9 @@ h1 {
         border-right: 12px solid transparent;    
         border-top: 15px solid var(--very-dark-grayish-blue);
     }
+}
 
+.visible {
+    display: flex;
+    opacity: 1;
 }
