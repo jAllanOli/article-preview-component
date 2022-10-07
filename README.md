@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/articlepreviewcomponent-C-DlNff1pJ)
+- Live Site URL: [here](https://jallanoli.github.io/article-preview-component/)
 
 ## My process
 
@@ -75,6 +75,7 @@ function changeContent() {
         baloon.classList.add('visible')
     }
 }
+```
 
 ### Continued development
 
